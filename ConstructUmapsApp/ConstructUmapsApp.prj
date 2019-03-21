@@ -1,0 +1,340 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3238148215" file="/home2/jjlee/Docker/NiftyUmaps/ConstructUmapsApp/ConstructUmapsApp.prj" location="/home2/jjlee/Docker/NiftyUmaps/ConstructUmapsApp" name="ConstructUmapsApp" preferred-package-location="/home2/jjlee/Docker/NiftyUmaps/ConstructUmapsApp/ConstructUmapsApp/for_redistribution" preferred-package-type="package.type.install" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>ConstructUmapsApp</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>John J. Lee</param.authnamewatermark>
+    <param.email>16329959+jjleewustledu@users.noreply.github.com</param.email>
+    <param.company>WUSTL Neuroimaging Laboratory</param.company>
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>/WUSTL_Neuroimaging_Laboratory/ConstructUmapsApp/</param.installpath.string>
+    <param.installpath.combo>option.installpath.userlocal</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes>In the following directions, replace MR/v95 by the directory on the target machine where MATLAB is installed, or MR by the directory where the MATLAB Runtime is installed.
+
+(1) Set the environment variable XAPPLRESDIR to this value:
+
+MR/v95/X11/app-defaults
+
+
+(2) If the environment variable LD_LIBRARY_PATH is undefined, set it to the following:
+
+MR/v95/runtime/glnxa64:MR/v95/bin/glnxa64:MR/v95/sys/os/glnxa64:MR/v95/sys/opengl/lib/glnxa64
+
+If it is defined, set it to the following:
+
+${LD_LIBRARY_PATH}:MR/v95/runtime/glnxa64:MR/v95/bin/glnxa64:MR/v95/sys/os/glnxa64:MR/v95/sys/opengl/lib/glnxa64</param.target.install.notes>
+    <param.intermediate>${PROJECT_ROOT}/ConstructUmapsApp/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/ConstructUmapsApp/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/ConstructUmapsApp/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/ConstructUmapsApp</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>ConstructUmapsAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>true</param.create.log>
+    <param.log.file>ConstructUmapsApp.log</param.log.file>
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.logo />
+      <param.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+      <param.help.text />
+    </unset>
+    <fileset.main>
+      <file>/home/usr/jjlee/MATLAB-Drive/mfiles/construct_umaps.m</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>/data/nil-bluearc/raichle/jjlee/Local/freesurfer_2017oct20/fsfast/toolbox/basename.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/assertLexist.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/assertSizeEqual.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/capitalize.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/cell2str.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/copyfile_4dfp.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dbbash.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/deleteExisting.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/deleteExisting_4dfp.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipiqr.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipisfinite.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipisinf.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipisnan.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipisreal.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/diplogprod.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipmad.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipmax.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipmean.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipmedian.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipmin.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipmode.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipprctile.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipprod.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipquantile.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipstd.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dipsum.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/diptrimmean.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dispexcept.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dispwarning.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/dprintf.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/embedInVector.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/ensureCell.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/ensureChar.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/ensureColVector.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/ensureRowVector.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/ensureSafenameMgz.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/ensureString.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/ensuredir.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/filepartsx.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/fileprefixparts.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/filesystemOps.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/fwhh2sigma.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/handerror.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/handexcept.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/handwarning.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/hostname.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/imagingType.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/lexist.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/lexist_4dfp.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/lgetenv.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/list2str.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/locationType.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/lstrcmp.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/lstrfind.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/mlbash.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/mlbashDiary.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/mlbashLogger.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/moveExisting.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/movefiles.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/mybasename.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/mycell2mat.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/myclass.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/mydatetimestr.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/myfilename.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/myfileparts.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/myfileprefix.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/popd.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/pushd.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/str2pnum.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/strexcise.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/strrep_on_.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/struct2str.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/tempFilepath.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/tempFqfilename.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/tmpFileprefix.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/trydelete.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/upperFirst.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mfiles/verbose.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mldata/src/+mldata/CCIRRadMeasurements.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mldata/src/+mldata/IManualMeasurements.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mldata/src/+mldata/TimingData.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mldata/src/+mldata/Xlsx.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/AbstractImagingTool.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/AbstractInnerImagingFormat.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/AbstractNIfTIComponent.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/AbstractNIfTIInfo.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/Analyze75Info.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/BlurringTool.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/DynamicsTool.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/FilesystemTool.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/HandleINIfTI.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/HandleJimmyShenInterface.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/HandleNIfTIIO.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/INIfTI.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/INIfTId.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/ImagingContext2.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/ImagingFormatContext.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/ImagingFormatTool.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/ImagingInfo.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/InnerNIfTI.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/InnerNIfTIIO.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/IsNumericTool.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/JimmyShenInterface.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/MaskingTool.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/NIfTIIO.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/NIfTIInfo.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/NIfTId.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/NumericalTool.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/RootNIfTIComponent.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourd/src/+mlfourd/Viewer.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/AbstractBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/AbstractImageComposite.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/AbstractSessionBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/AbstractT4ResolveBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/AbstractT4ResolveError.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/AbstractUmapResolveBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/CarneyUmapBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/CarneyUmapBuilder2.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/CompositeT4ResolveBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/FourdfpInfo.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/FourdfpVisitor.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/IImageComposite.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/IT4ResolveBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/IfhParser.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/ImageComposite.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/ImageFrames.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/ImgRecLogger.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/ImgRecParser.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/InnerFourdfp.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/RegistrationTool.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/T4ResolveBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/T4ResolveError.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/T4ResolveParser.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/T4ResolveReport.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlfourdfp/src/+mlfourdfp/Viewer.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlio/src/+mlio/AbstractHandleIO.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlio/src/+mlio/AbstractIO.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlio/src/+mlio/AbstractParser.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlio/src/+mlio/AbstractSimpleIO.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlio/src/+mlio/AbstractXlsxIO.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlio/src/+mlio/HandleIOInterface.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlio/src/+mlio/IOInterface.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlio/src/+mlio/LogParser.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlio/src/+mlio/TextParser.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlkinetics/src/+mlkinetics/ITiming.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlkinetics/src/+mlkinetics/Timing.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/extra_nii_hdr.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/load_nii.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/load_nii_ext.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/load_nii_hdr.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/load_nii_img.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/load_untouch0_nii_hdr.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/load_untouch_header_only.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/load_untouch_nii.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/load_untouch_nii_hdr.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/load_untouch_nii_img.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/make_ana.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/make_nii.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/save_nii.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/save_nii_ext.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/save_nii_hdr.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/save_untouch0_nii_hdr.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/save_untouch_nii.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/save_untouch_nii_hdr.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/verify_nii_ext.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlniftitools/src/+mlniftitools/xform_nii.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlnipet/src/+mlnipet/ISessionData.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlnipet/src/+mlnipet/NipetBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlnipet/src/+mlnipet/ResolvingSessionData.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlnipet/src/+mlnipet/Resources.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpatterns/src/+mlpatterns/CellArrayList.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpatterns/src/+mlpatterns/CellArrayListIterator.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpatterns/src/+mlpatterns/HandleDipNumerical.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpatterns/src/+mlpatterns/HandleNumerical.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpatterns/src/+mlpatterns/Iterator.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpatterns/src/+mlpatterns/List.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpatterns/src/+mlpatterns/Singleton.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpet/src/+mlpet/DirToolTracer.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpet/src/+mlpet/Msktgen.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpet/src/+mlpet/Resources.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpet/src/+mlpet/TracerBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpet/src/+mlpet/TracerResolveBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/AbstractBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/AbstractDirector.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/AbstractLogger.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/Finished.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/IBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/IDirector.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/ILogger.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/ISessionData.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/IStudyCensus.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/IStudyHandle.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/Logger.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/Logger2.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/PipelineRegistry.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/RootBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/SessionData.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/StudyData.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/StudyDataSingletons.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlpipeline/src/+mlpipeline/StudyDataStorage.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlraichle/src/+mlraichle/RaichleRegistry.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlraichle/src/+mlraichle/SessionData.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlraichle/src/+mlraichle/StudyCensus.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlraichle/src/+mlraichle/StudyData.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlraichle/src/+mlraichle/TracerDirector2.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlsiemens/src/+mlsiemens/MMRBuilder.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlsiemens/src/+mlsiemens/MMRRegistry.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlsurfer/src/+mlsurfer/InnerMGH.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlsurfer/src/+mlsurfer/MGHInfo.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlsystem/src/+mlsystem/DirTool.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlsystem/src/+mlsystem/DirTools.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlsystem/src/+mlsystem/FilesystemRegistry.m</file>
+      <file>/data/nil-bluearc/raichle/jjlee/MATLAB-Drive/mlsystem/src/+mlsystem/VectorTools.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/ConstructUmapsApp/for_testing" name="splash.png" optional="false">/home2/jjlee/Docker/NiftyUmaps/ConstructUmapsApp/ConstructUmapsApp/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/ConstructUmapsApp/for_testing" name="ConstructUmapsApp" optional="false">/home2/jjlee/Docker/NiftyUmaps/ConstructUmapsApp/ConstructUmapsApp/for_testing/ConstructUmapsApp</file>
+      <file location="${PROJECT_ROOT}/ConstructUmapsApp/for_testing" name="run_ConstructUmapsApp.sh" optional="false">/home2/jjlee/Docker/NiftyUmaps/ConstructUmapsApp/ConstructUmapsApp/for_testing/run_ConstructUmapsApp.sh</file>
+      <file location="${PROJECT_ROOT}/ConstructUmapsApp/for_testing" name="readme.txt" optional="true">/home2/jjlee/Docker/NiftyUmaps/ConstructUmapsApp/ConstructUmapsApp/for_testing/readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/home2/MATLAB/R2018b</root>
+      <toolboxes>
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>3.10.0-957.5.1.el7.x86_64</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
